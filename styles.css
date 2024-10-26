@@ -1,15 +1,15 @@
 body {
 	background: black;
+	padding-top: 100px;
 }
-* {
-	border: 1px dashed red;
-	min-height: 10px;
-}
+
 .postcard {
-	background: white;
 	width: 400px;
 	height: 300px;
 	margin: auto;
+	background: beige;
+	border-radius: 10px;
+	padding: 10px;
 }
 .postcard-header {
 	display: flex;
@@ -21,7 +21,56 @@ body {
 .postcard-header h1 {
 	width: 200 px;
 	margin: auto;
+	font-family: cursive;
 }
 .postcard-body {
 	display: flex;
+}
+.body-left {
+	padding: 5px;
+	height: fit-content;
+	font-family: "Playwrite DE Grund", cursive;
+	font-size: small;
+}
+.body-left h3 {
+	color: blue;
+	font-style: oblique;
+}
+.body-left p {
+	color: rgb(11, 45, 240);
+}
+
+.body-left p:first-child {
+	margin-top: 0;
+}
+.body-right input {
+	border: none;
+	border-bottom: gray;
+	color: red;
+}
+.body-right {
+	padding: 10px;
+	margin-top: 10px;
+}
+input {
+	margin-bottom: 5px;
+}
+.postcard-footer {
+	text-align: center;
+	height: 20px;
+	margin-top: none;
+}
+.postcard-footer button:hover {
+	color: lightblue;
+	border-color: black;
+	background-color: brown;
+	border-radius: 3px;
+	padding: 5px;
+}
+.postcard-footer button {
+	color: grey;
+	background: blue;
+	border: white;
+	border-radius: 3px;
+	padding: 5px;
 }
